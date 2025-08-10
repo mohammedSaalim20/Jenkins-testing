@@ -15,6 +15,7 @@ public class listIntersection {
                 intersection.add(num);
             }
         }
+        System.out.println("This in before return statment");
         return intersection;
     }
 
