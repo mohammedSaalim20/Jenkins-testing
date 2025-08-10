@@ -3,6 +3,7 @@ import java.util.*;
 public class listIntersection {
     
     public static List<Integer> findIntersection(List<Integer> list1, List<Integer> list2) {
+        System.out.println("This in side findIntersection");
         Set<Integer> set1 = new HashSet<>(list2);
         Set<Integer> set2 = new HashSet<>();
         List<Integer> intersection = new ArrayList<>();
@@ -20,7 +21,7 @@ public class listIntersection {
     public static void main(String[] args) {
         List<Integer> list1 = Arrays.asList(1, 2, 3, 4, 5, 8, 9);
         List<Integer> list2 = Arrays.asList(4, 5, 6, 7, 8, 9, 10);
-
+        System.out.println("This is the starting");
         List<Integer> intersection = findIntersection(list1, list2);
         System.out.println("Intersection: " + intersection);
     }
